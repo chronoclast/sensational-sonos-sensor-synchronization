@@ -3,9 +3,9 @@ var request = require('request');
 
 // Setup the MQTT client
 var client = mqtt.connect({
-  servers:[{'host':'<URL.OF.YOUR.MQTT.BROKER.HERE>'}], // for example mqtt.relayr.io
-  username: "<YOUR.USER.NAME.HERE>",
-  password: "<YOUR.PASSWORD.HERE>",
+  servers:[{'host':'<URL_OF_YOUR_MQTT_BROKER_HERE>'}], // for example mqtt.relayr.io
+  username: "<YOUR_USER_NAME_HERE>",
+  password: "<YOUR_PASSWORD_HERE>",
   protocol : 'mqtts'
 });
 
@@ -13,7 +13,7 @@ var client = mqtt.connect({
 client.on('connect', function() {
 
   // Subscribe to commands sent from the dashboard or other clients
-  client.subscribe("<YOUR.MQTT.TOPIC.HERE>"); 
+  client.subscribe("<YOUR_MQTT_TOPIC_HERE>"); 
 
   // Start receiving data
   client.on('message', function(topic, message) {

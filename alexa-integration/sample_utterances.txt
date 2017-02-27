@@ -1,0 +1,2 @@
+SonosIntent {itemOne}
+SonosIntent für {itemOne}

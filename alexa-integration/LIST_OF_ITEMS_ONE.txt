@@ -1,0 +1,7 @@
+play 
+pause
+louder
+volume up
+softer
+volume down
+next

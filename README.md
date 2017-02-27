@@ -4,4 +4,4 @@
 
 Work in progress. Meanwhile see the video:
 
-[![ScreenShot](https://raw.github.com/GabLeRoux/WebMole/master/ressources/WebMole_Youtube_Video.png)](http://youtu.be/vt5fpE0bzSY)
+[![ScreenShot](http://img.youtube.com/vi/bAIFPeIl3MI/0.jpg)](https://www.youtube.com/watch?v=bAIFPeIl3MI)

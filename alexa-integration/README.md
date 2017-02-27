@@ -1,4 +1,4 @@
-# Sonos integration with Alexa Echo
+# Sonos Integration with Alexa Echo
 
 ------
 

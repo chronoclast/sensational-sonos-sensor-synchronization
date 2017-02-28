@@ -1,6 +1,5 @@
 # Sonos Integration with Alexa Echo
 
-------
 
 ## Introduction
 

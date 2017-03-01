@@ -54,10 +54,7 @@ For this step I am following the steps by Graciano in his [sonos-echo](https://g
 
 2. I confirmed the e-mail and [added a host](https://ydns.io/hosts/add) (the correct ip address for my internet was already there by default - great!).
 
-3. Luckily, for FRITZ!box the steps of setting up a DynamicDSN were nicely documented on the ydsn.io website [here](https://ydns.io/knowledge-base/updating-domain-with-fritzbox). I just followed the steps:
-
-   ![](./assets/dynamic_dsn.jpeg)
-
+3. Luckily, for FRITZ!box the steps of setting up a DynamicDSN were nicely documented on the ydsn.io website [here](https://ydns.io/knowledge-base/updating-domain-with-fritzbox). I just followed the steps.
 
 4. Now - to set up the [Port Forwarding](https://en.avm.de/service/fritzbox/fritzbox-7390/knowledge-base/publication/show/893_Setting-up-static-port-sharing/), I went to "Portfreigaben" in the fritz.box > Internet > freigaben section and clicked `neue portfreigaben`.  And then I did the following:
 

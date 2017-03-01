@@ -6,6 +6,8 @@ The [Orange Pi One](http://www.orangepi.org/orangepione/) is an affordable open-
 
 This document explains how to deploy this project, i.e. the [Sonos HTTP API](https://github.com/jishi/node-sonos-http-api) server, as well as the [Node.js scripts](./nodejs-scripts) to fire requests and control your Sonos speakers using sensor data or other events.
 
+![](./assets/orange_pi_dark.jpg)
+
 In this tutorial, we will be using **Armbian version 5.25**, a flavor based on Debian Jessie 3.4.113, specifically built for the Orange Pi One. Please note that this document applies to the **server version**, so **no graphical interface** will be available by default.
 
 ## Requirements
@@ -82,16 +84,31 @@ If everything worked well, and depending on your musical taste, everyone at home
 
 ### Scripts for Sensor Integration
 
-------------WORK IN PROGRESS------------
+##### ------------WORK IN PROGRESS------------
+
+Now that we can send commands to the Sonos speaker(s), it's also possible to build integrations with other devices easily. In the folder `nodejs-scripts` you will find a set of scripts for different applications.
+
+These scripts subscribe to readings sent by sensor nodes via [MQTT](https://en.wikipedia.org/wiki/MQTT). For more information, just check the documentation provided in [such folder](../nodejs-scripts/).
+
+To run the scripts on your Orange Pi, first go to the folder running the command:  
+`$ cd ../nodejs-scripts/`
+
+Once there, simply run:  
+`$ node <SCRIPT_NAME>`
+
+For example, to run the first example, which will make the Sonos play music automatically when you come home, use the following invocation:  
+`$ node nodejs-01-welcome-home.js`
+
+However, if the Orange Pi is reset, or if it loses power accidentally, the scripts will stop working, so in the next section we will learn how to *automate* the initialization of all services once the system boots up.
 
 ### Run the Server and the Scripts on Bootup
 
-------------WORK IN PROGRESS------------
+##### ------------WORK IN PROGRESS------------
 
 ## Shutting Down the System
 
-If you want to turn off your Orange Pi, **do not disconnect the Orange from the power supply**, as this may corrupt the file system. Instead, to halt the board immediately, while *ssh'ing* it, run the following command:
-`sudo shutdown -h now`
+If you want to turn off your Orange Pi, **do not disconnect the Orange from the power supply**, as this may corrupt the file system. Instead, to halt the board immediately, while *ssh'ing* it, run the following command:  
+`$ sudo shutdown -h now`
 
 ## To Do
 

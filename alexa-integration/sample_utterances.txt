@@ -1,2 +1,3 @@
 SonosIntent {itemOne}
-SonosIntent für {itemOne}
+SonosIntent for {itemOne}
+SonosIntent to {itemOne}

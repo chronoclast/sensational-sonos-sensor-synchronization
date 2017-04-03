@@ -28,22 +28,22 @@ Please note that other power supplies may work, but your board could find issues
 1. Download Armbian from the [official project source](https://www.armbian.com/orange-pi-one/). Click on the `Server` tab, and then on `Debian Jessie` to start the download.
 2. Once ready, unzip the downloaded file with your program of choice (e.g. [7-Zip](http://www.7-zip.org) on Linux and Windows, or [The Unarchiver](https://itunes.apple.com/us/app/the-unarchiver/id425424353?mt=12) on OS X). For additional explanations, refer to the [official guide](https://www.armbian.com/orange-pi-one/), under the tab `Quick Start`.
 3. Insert the SD card in your computer and format it with [SD Formatter](https://www.sdcard.org/downloads/formatter_4/). Make sure that you run an **overwrite format**, and not a quick format. This is a slow process and may take a few minutes.
-4. Burn the image with Etcher. Simply select the file with the extension `.img` in the folder where you unzipped the contents of the downloaded package, and follow the on-screen instructions.
+4. Burn the image with [Etcher](https://etcher.io). Simply select the file with the extension `.img` in the folder where you unzipped the contents of the downloaded package, and follow the on-screen instructions.
 
 ### Network Configuration
 
 *Hotplug* Ethernet and DHCP will work by default, so if you hook the board up to one of the ports of your router, it will get an IP address automatically.
 
-Please note that running `ifconfig` will not work, as it does not come by default, so you will need to install it if you need it. However, if you only need basic information, like finding out the **IP address of your Orange Pi**, use the command `ip addr`.
+Please note that the command `ifconfig` will not work, as it does not come by default, so you will need to install it if you need it. However, if you only need basic information, like finding out the IP address of your Orange Pi, **use the command `ip addr` instead**.
 
 ### Install Node.js and npm
 
 We've experienced issues with Node.js v7, so this tutorial will cover the installation of Node.js and npm (Node Package Manager) v6. These instructions are based on the official Node.js documentation, that can be found [here](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions).
 
-On the terminal login and run the following command to **download the package**:  
+On the terminal login and run the following command to download the package:  
 `$ curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -`
 
-Now, to **proceed with the installation**, simply run:  
+Now, to proceed with the installation, simply run:  
 `$ sudo apt-get install -y nodejs`
 
 Once ready, to make sure that Node.js has been properly installed, you can check the version with the command `node -v`. Same happens with npm; find out the current version running `npm -v`.
@@ -105,10 +105,13 @@ However, if the Orange Pi is reset, or if it loses power accidentally, the scrip
 
 ##### ------------WORK IN PROGRESS------------
 
-## Shutting Down the System
+## TO TRY! Shutting Down the System
 
 If you want to turn off your Orange Pi, **do not disconnect the Orange from the power supply**, as this may corrupt the file system. Instead, to halt the board immediately, while *ssh'ing* it, run the following command:  
 `$ sudo shutdown -h now`
+
+To document:  
+`$ sudo /sbin/shutdown -r now`
 
 ## To Do
 

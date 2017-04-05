@@ -19,18 +19,19 @@ This project is mainly divided in two parts: The first one consists on running a
 
 **For the first part of this project**, i.e. to trigger actions in your Sonos speaker using data from sensors you will need:
 
-* [Sonos](http://www.sonos.com) speaker (see note below).
-* [Orange Pi One](http://www.orangepi.org/orangepione/) (see note below), including the following additional components:
+* [Sonos](http://www.sonos.com) speaker (see note below)
+* A WiFi development kit
+* Magnetic switch
+* Grove PIR sensor
+* Orange Pi set, consisting on:
+	* [Orange Pi One] (http://www.orangepi.org/orangepione) single-board computer
 	* 4GB SD Card (8GB is strongly recommended)
 	* A decent 5V/2A USB power supply (like [this one](https://www.amazon.de/dp/B00JWXT6BK/ref=cm_sw_em_r_mt_dp_TIjTyb0T3E30H))
 	* A USB to 4.0x1.7mm DC jack cable (like [this one](http://tinkersphere.com/power/1746-orange-pi-power-cable-usb.html))
-* A WiFi development kit
-* Magnetic switch ()
-* Grove PIR sensor
 
-As for the second part, you will need:
+**As for the second part**, you will need:
 
-* An [Amazon Echo](http://a.co/9imYj0b) (or an [Echo Dot](http://a.co/4MYRdzt)).
+* An [Amazon Echo](http://a.co/9imYj0b) (or an [Echo Dot](http://a.co/4MYRdzt))
 
 **NOTE:** This project will work great with any Sonos PLAY:1, PLAY:3 or PLAY:5. It has not been tested in other devices, but it will likely work well. As for the single-board computer, the first version of this project has been deployed in an Orange Pi One, but it may work in other Armbian-based boards. More boards will be added soon, including the Raspberry Pi.
 
@@ -41,7 +42,17 @@ As for the second part, you will need:
 
 ## To Do
 
-* Finish the requirements list, adding the links.
+* Finish the requirements list, adding missing links.
 * Create the project structure.
 * OPTIONAL: Create the solution architecture.
 * Adding the license text.
+
+## New Elevator
+
+afafaf
+
+* When should it be replace?
+* Should the gateway be replaced as well?
+	* The current model is onboarded on the sales account
+	* Yeah
+	* Yeah

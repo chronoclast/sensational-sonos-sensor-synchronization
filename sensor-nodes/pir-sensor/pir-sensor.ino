@@ -1,4 +1,36 @@
 
+/*
+ * pir-sensor.ino
+ * 
+ * This sketch takes readings from a PIR sensor and sends them in a JSON payload
+ * to the relayr Cloud via MQTT. These readings will afterwards trigger actions
+ * on the Sonos speakers via the local API.
+ * 
+ * Website : https://github.com/chronoclast/sensational-sonos-sensor-synchronization
+ * Authors : Emelie Hofland (emelie_hofland@hotmail.com)
+ *           Jaime González-Arintero (a.lie.called.life@gmail.com)
+ *
+ * The MIT License (MIT)
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ */
+
 //Have a look at the onboarding tutorial at the relayr Github:
 //https://github.com/relayr/ESP8266_Arduino
 
@@ -34,7 +66,8 @@ PubSubClient client(espClient);
 
 
 //Some definitions, including the publishing period
-const int led = BUILTIN_LED; //If the LED doesn't work, try changing "BUILTIN_LED" for "D0" or "D4"
+//If the LED doesn't work, try changing "BUILTIN_LED" for "D0" or "D4"
+const int led = BUILTIN_LED;
 boolean ledState = LOW;
 unsigned long lastPublishTime = 0;
 unsigned long lastBlinkTime = 0;
@@ -57,8 +90,7 @@ void setup()
   //Initializing the serial port
   Serial.begin(9600);
   Serial.println("");
-  Serial.println("Hello there, I'm your ESP8266.");
-  Serial.println("Let's talk to the relayr Cloud!");
+  Serial.println("Hello there, I'm setting this up...");
 
 
   //Initializing the WiFi and the MQTT

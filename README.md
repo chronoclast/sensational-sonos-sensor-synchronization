@@ -4,7 +4,7 @@
 
 ##### ------------ WORK IN PROGRESS ------------
 
-Wouldn't it be nice to come home and have your music on automatically? And what if you could control the speaker easily, **just using your voice?**
+Wouldn't it be nice to come home and have your music on automatically? And what if you could control the speaker easily, just using your voice?
 
 Well, it's still a work in progress!  
 But meanwhile you can see this video (*recorded after some Spanish wines*), in which we explain briefly how it works:

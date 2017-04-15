@@ -26,7 +26,7 @@ To trigger actions in your Sonos speaker using data from sensors you will need:
 * Magnetic switch (optional).
 * Grove PIR sensor.
 * Orange Pi set, consisting on:
-	* [Orange Pi One] (http://www.orangepi.org/orangepione) single-board computer
+	* [Orange Pi One](http://www.orangepi.org/orangepione) single-board computer
 	* 4GB SD Card (8GB is strongly recommended)
 	* A decent 5V/2A USB power supply (like [this one](https://www.amazon.de/dp/B00JWXT6BK/ref=cm_sw_em_r_mt_dp_TIjTyb0T3E30H))
 	* A USB to 4.0x1.7mm DC jack cable (like [this one](http://tinkersphere.com/power/1746-orange-pi-power-cable-usb.html))
